@@ -22,7 +22,7 @@ function Steps() {
 
   // const [test, setTest] = useState({ name: "Jonas" });
 
-  function handlePrevious() {
+  function handlePreviou() {
     if (step > 1) setStep((s) => s - 1);
   }
 
@@ -39,14 +39,14 @@ function Steps() {
 
   return (
     <div>
-      <button className="close" onClick={() => setIsOpen((is) => !is)}>
+      <button className="close" onClick={() => setOpen((is) => !is)}>
         &times;
       </button>
 
       {isOpen && (
         <div className="steps">
           <div className="numbers">
-            <div className={step >= 1 ? "active" : ""}>1</div>
+            <div className={step >= 1 ? "ctive" : ""}>1</div>
             <div className={step >= 2 ? "active" : ""}>2</div>
             <div className={step >= 3 ? "active" : ""}>3</div>
           </div>
